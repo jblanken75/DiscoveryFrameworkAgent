@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Citizenship status refers to the child&apos;s legal status in the country. In this case, the options are that they may be a U.S. Citizen, or a qualified immigrant (green card holder). Any other status, such as a temporary visa holder or undocumented is &quot;Other&quot;</helpText>
+        <isActive>true</isActive>
+        <name>ChildrenCitizenshipStatus</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What is the citizenship status of your children?</questionText>
+        <responseValues>U.S. Citizen
+Qualified Immigrant
+Other</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>ChildrenCitizenshipStatus</developerName>
+    <name>ChildrenCitizenshipStatus</name>
+    <questionCategory>Services Assessment</questionCategory>
+</AssessmentQuestion>
