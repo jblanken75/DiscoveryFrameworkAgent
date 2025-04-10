@@ -2,6 +2,7 @@
 This is a framework that allows for Agentforce Agents to use Discovery Framework Omniscripts to power Agentforce conversations.  
 
 # Assumptions/Limitations about the framework
+* The Org must have Omnistudio and Discovery Framework enabled
 * An Active Discovery Framework Omniscript must be created.  The Omniscript must be a Discovery Framework Omniscript and cannot be a non Discovery Framework Omniscript
 * This will only work with single value elements such as Text, Number, Date.  Grouped elements such as Blocks and Edit Blocks will not work
 
