@@ -45,4 +45,6 @@ Next use the Mestadata API to import the Repository Items in the following order
       * You must store each of the values entered by the user for future use. The 'stepname' and 'name' elements defines how you will store the value. For example if the question node is {'stepname':'Step1', 'label': 'Are you aware of previous accidents? If yes, describe', 'name': 'Accidents', 'show': {}, 'sequenceNumber': '1.0' } then you will remember the answer with the stepname of 'Step1' and the name of 'Accidents'
   * Add the OmniscriptHander and SaveDiscoveryFramework Actions to the Topic
 
-
+<b>Manual Setup</b><p>
+<i>Note:  If using a manual setup, you will have to create your own Discovery Framework Omniscript as Discovery Framework Omniscripts and Assessment Questions can only be safely imported using the Metadata API <i><p>
+1. Create the AgentForceOmniscriptHandler Apex Class from the source <a href="https://github.com/jblanken75/DiscoveryFrameworkAgent/blob/main/force-app/main/default/classes/AgentForceOmniscriptHandler.cls">code</a>
