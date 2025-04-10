@@ -13,7 +13,7 @@ This is a framework that allows for Agentforce Agents to use Discovery Framework
 
 # Setup Instructions
 
-# Using the Metadata API
+<b>Using the Metadata API</b><p>
 If using the Metadata API, import the Repository Items in the following order:
 1. classes
 2. AssessmentQuestions
@@ -21,5 +21,6 @@ If using the Metadata API, import the Repository Items in the following order:
 4. omniIntegrationProcedures
 5. omniScripts
 6. permissionSets
+7. 
 
 
