@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Children3to5</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>How many of your children are between the ages of 3-5?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Integer</dataType>
+    <developerName>Children3to5</developerName>
+    <name>Children3to5</name>
+    <questionCategory>Services Assessment</questionCategory>
+</AssessmentQuestion>

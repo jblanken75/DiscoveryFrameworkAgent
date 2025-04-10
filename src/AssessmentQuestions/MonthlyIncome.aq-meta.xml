@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <helpText>Income is defined as income from all sources including, but not limited to employment income, unemployment benefits, child support, social security/disability benefits.</helpText>
+        <isActive>true</isActive>
+        <name>MonthlyIncome</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What is your current monthly income?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Currency</dataType>
+    <developerName>MonthlyIncome</developerName>
+    <name>MonthlyIncome</name>
+    <questionCategory>Services Assessment</questionCategory>
+</AssessmentQuestion>

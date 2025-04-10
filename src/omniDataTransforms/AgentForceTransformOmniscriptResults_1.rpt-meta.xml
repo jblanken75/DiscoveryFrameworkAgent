@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;versionNumber&quot; : &quot;1.0&quot;,
+  &quot;type&quot; : &quot;ElderlyCare&quot;,
+  &quot;subType&quot; : &quot;Assessment&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;description&quot; : null,
+  &quot;name&quot; : &quot;ElderlyCareComplaintAssessment&quot;,
+  &quot;elements&quot; : [ {
+    &quot;type&quot; : &quot;Step&quot;,
+    &quot;sequenceNumber&quot; : &quot;0.0&quot;,
+    &quot;propertySetConfig&quot; : {
+      &quot;type&quot; : null,
+      &quot;text&quot; : null,
+      &quot;show&quot; : { },
+      &quot;required&quot; : &quot;null&quot;,
+      &quot;radioLabels&quot; : [ ],
+      &quot;options&quot; : [ ],
+      &quot;label&quot; : &quot;Untitled Step&quot;,
+      &quot;helpText&quot; : null,
+      &quot;help&quot; : &quot;null&quot;,
+      &quot;expression&quot; : null,
+      &quot;dateFormat&quot; : null,
+      &quot;dataType&quot; : null,
+      &quot;conditionType&quot; : &quot;Hide if False&quot;,
+      &quot;checkLabel&quot; : null
+    },
+    &quot;parentElementType&quot; : null,
+    &quot;parentElementName&quot; : null,
+    &quot;omniProcessVersionNumber&quot; : &quot;1.0&quot;,
+    &quot;name&quot; : &quot;Step1&quot;,
+    &quot;level&quot; : &quot;0.0&quot;,
+    &quot;elements&quot; : [ {
+      &quot;type&quot; : &quot;Radio&quot;,
+      &quot;sequenceNumber&quot; : &quot;0.0&quot;,
+      &quot;propertySetConfig&quot; : {
+        &quot;type&quot; : null,
+        &quot;text&quot; : null,
+        &quot;show&quot; : { },
+        &quot;required&quot; : &quot;false&quot;,
+        &quot;radioLabels&quot; : [ ],
+        &quot;options&quot; : [ {
+          &quot;setAll&quot; : false,
+          &quot;value&quot; : &quot;Yes&quot;,
+          &quot;developerName&quot; : &quot;Yes&quot;,
+          &quot;name&quot; : &quot;Yes&quot;
+        }, {
+          &quot;setAll&quot; : false,
+          &quot;value&quot; : &quot;No&quot;,
+          &quot;developerName&quot; : &quot;No&quot;,
+          &quot;name&quot; : &quot;No&quot;
+        } ],
+        &quot;label&quot; : &quot;Have you noticed erratic driving or new damage to their vehicle?&quot;,
+        &quot;helpText&quot; : &quot;&quot;,
+        &quot;help&quot; : &quot;false&quot;,
+        &quot;expression&quot; : null,
+        &quot;dateFormat&quot; : null,
+        &quot;dataType&quot; : null,
+        &quot;conditionType&quot; : &quot;Hide if False&quot;,
+        &quot;checkLabel&quot; : null
+      },
+      &quot;parentElementType&quot; : &quot;Step&quot;,
+      &quot;parentElementName&quot; : &quot;Step1&quot;,
+      &quot;omniProcessVersionNumber&quot; : &quot;1.0&quot;,
+      &quot;name&quot; : &quot;Driving&quot;,
+      &quot;level&quot; : &quot;1.0&quot;,
+      &quot;elements&quot; : [ ],
+      &quot;discoveryFrameworkUsageType&quot; : null,
+      &quot;designerCustomizationType&quot; : &quot;Discovery Framework&quot;,
+      &quot;description&quot; : null,
+      &quot;customTypeDetails&quot; : {
+        &quot;discoveryFramework&quot; : {
+          &quot;questionText&quot; : &quot;Have you noticed erratic driving or new damage to their vehicle?&quot;,
+          &quot;questionNamespace&quot; : null,
+          &quot;questionDeveloperName&quot; : &quot;Driving&quot;,
+          &quot;questionDataType&quot; : &quot;Radio&quot;,
+          &quot;questionCategory&quot; : &quot;Demographic&quot;
+        }
+      }
+    }, {
+      &quot;type&quot; : &quot;Text&quot;,
+      &quot;sequenceNumber&quot; : &quot;1.0&quot;,
+      &quot;propertySetConfig&quot; : {
+        &quot;type&quot; : null,
+        &quot;text&quot; : null,
+        &quot;show&quot; : { },
+        &quot;required&quot; : &quot;false&quot;,
+        &quot;radioLabels&quot; : [ ],
+        &quot;options&quot; : [ ],
+        &quot;label&quot; : &quot;Are you aware of previous accidents? If yes, describe&quot;,
+        &quot;helpText&quot; : &quot;&quot;,
+        &quot;help&quot; : &quot;false&quot;,
+        &quot;expression&quot; : null,
+        &quot;dateFormat&quot; : null,
+        &quot;dataType&quot; : null,
+        &quot;conditionType&quot; : &quot;Hide if False&quot;,
+        &quot;checkLabel&quot; : null
+      },
+      &quot;parentElementType&quot; : &quot;Step&quot;,
+      &quot;parentElementName&quot; : &quot;Step1&quot;,
+      &quot;omniProcessVersionNumber&quot; : &quot;1.0&quot;,
+      &quot;name&quot; : &quot;Accidents&quot;,
+      &quot;level&quot; : &quot;1.0&quot;,
+      &quot;elements&quot; : [ ],
+      &quot;discoveryFrameworkUsageType&quot; : null,
+      &quot;designerCustomizationType&quot; : &quot;Discovery Framework&quot;,
+      &quot;description&quot; : null,
+      &quot;customTypeDetails&quot; : {
+        &quot;discoveryFramework&quot; : {
+          &quot;questionText&quot; : &quot;Are you aware of previous accidents? If yes, describe&quot;,
+          &quot;questionNamespace&quot; : null,
+          &quot;questionDeveloperName&quot; : &quot;Accidents&quot;,
+          &quot;questionDataType&quot; : &quot;Text&quot;,
+          &quot;questionCategory&quot; : &quot;Demographic&quot;
+        }
+      }
+    }, {
+      &quot;type&quot; : &quot;Radio&quot;,
+      &quot;sequenceNumber&quot; : &quot;2.0&quot;,
+      &quot;propertySetConfig&quot; : {
+        &quot;type&quot; : null,
+        &quot;text&quot; : null,
+        &quot;show&quot; : { },
+        &quot;required&quot; : &quot;false&quot;,
+        &quot;radioLabels&quot; : [ ],
+        &quot;options&quot; : [ {
+          &quot;setAll&quot; : false,
+          &quot;value&quot; : &quot;Yes&quot;,
+          &quot;developerName&quot; : &quot;Yes&quot;,
+          &quot;name&quot; : &quot;Yes&quot;
+        }, {
+          &quot;setAll&quot; : false,
+          &quot;value&quot; : &quot;No&quot;,
+          &quot;developerName&quot; : &quot;No&quot;,
+          &quot;name&quot; : &quot;No&quot;
+        } ],
+        &quot;label&quot; : &quot;Are they failing to put trash out for weekly pickup?&quot;,
+        &quot;helpText&quot; : &quot;&quot;,
+        &quot;help&quot; : &quot;false&quot;,
+        &quot;expression&quot; : null,
+        &quot;dateFormat&quot; : null,
+        &quot;dataType&quot; : null,
+        &quot;conditionType&quot; : &quot;Hide if False&quot;,
+        &quot;checkLabel&quot; : null
+      },
+      &quot;parentElementType&quot; : &quot;Step&quot;,
+      &quot;parentElementName&quot; : &quot;Step1&quot;,
+      &quot;omniProcessVersionNumber&quot; : &quot;1.0&quot;,
+      &quot;name&quot; : &quot;Trash&quot;,
+      &quot;level&quot; : &quot;1.0&quot;,
+      &quot;elements&quot; : [ ],
+      &quot;discoveryFrameworkUsageType&quot; : null,
+      &quot;designerCustomizationType&quot; : &quot;Discovery Framework&quot;,
+      &quot;description&quot; : null,
+      &quot;customTypeDetails&quot; : {
+        &quot;discoveryFramework&quot; : {
+          &quot;questionText&quot; : &quot;Are they failing to put trash out for weekly pickup?&quot;,
+          &quot;questionNamespace&quot; : null,
+          &quot;questionDeveloperName&quot; : &quot;Trash&quot;,
+          &quot;questionDataType&quot; : &quot;Radio&quot;,
+          &quot;questionCategory&quot; : &quot;Demographic&quot;
+        }
+      }
+    }, {
+      &quot;type&quot; : &quot;Radio&quot;,
+      &quot;sequenceNumber&quot; : &quot;3.0&quot;,
+      &quot;propertySetConfig&quot; : {
+        &quot;type&quot; : null,
+        &quot;text&quot; : null,
+        &quot;show&quot; : { },
+        &quot;required&quot; : &quot;false&quot;,
+        &quot;radioLabels&quot; : [ ],
+        &quot;options&quot; : [ {
+          &quot;setAll&quot; : false,
+          &quot;value&quot; : &quot;Yes&quot;,
+          &quot;developerName&quot; : &quot;Yes&quot;,
+          &quot;name&quot; : &quot;Yes&quot;
+        }, {
+          &quot;setAll&quot; : false,
+          &quot;value&quot; : &quot;No&quot;,
+          &quot;developerName&quot; : &quot;No&quot;,
+          &quot;name&quot; : &quot;No&quot;
+        } ],
+        &quot;label&quot; : &quot;Is there a sudden unkempt appearance?&quot;,
+        &quot;helpText&quot; : &quot;&quot;,
+        &quot;help&quot; : &quot;false&quot;,
+        &quot;expression&quot; : null,
+        &quot;dateFormat&quot; : null,
+        &quot;dataType&quot; : null,
+        &quot;conditionType&quot; : &quot;Hide if False&quot;,
+        &quot;checkLabel&quot; : null
+      },
+      &quot;parentElementType&quot; : &quot;Step&quot;,
+      &quot;parentElementName&quot; : &quot;Step1&quot;,
+      &quot;omniProcessVersionNumber&quot; : &quot;1.0&quot;,
+      &quot;name&quot; : &quot;Appearance&quot;,
+      &quot;level&quot; : &quot;1.0&quot;,
+      &quot;elements&quot; : [ ],
+      &quot;discoveryFrameworkUsageType&quot; : null,
+      &quot;designerCustomizationType&quot; : &quot;Discovery Framework&quot;,
+      &quot;description&quot; : null,
+      &quot;customTypeDetails&quot; : {
+        &quot;discoveryFramework&quot; : {
+          &quot;questionText&quot; : &quot;Is there a sudden unkempt appearance?&quot;,
+          &quot;questionNamespace&quot; : null,
+          &quot;questionDeveloperName&quot; : &quot;Appearance&quot;,
+          &quot;questionDataType&quot; : &quot;Radio&quot;,
+          &quot;questionCategory&quot; : &quot;Demographic&quot;
+        }
+      }
+    }, {
+      &quot;type&quot; : &quot;Text Area&quot;,
+      &quot;sequenceNumber&quot; : &quot;4.0&quot;,
+      &quot;propertySetConfig&quot; : {
+        &quot;type&quot; : null,
+        &quot;text&quot; : null,
+        &quot;show&quot; : {
+          &quot;group&quot; : {
+            &quot;rules&quot; : [ {
+              &quot;field&quot; : &quot;Appearance&quot;,
+              &quot;condition&quot; : &quot;=&quot;,
+              &quot;data&quot; : &quot;Yes&quot;
+            } ],
+            &quot;operator&quot; : &quot;AND&quot;
+          }
+        },
+        &quot;required&quot; : &quot;false&quot;,
+        &quot;radioLabels&quot; : [ ],
+        &quot;options&quot; : [ ],
+        &quot;label&quot; : &quot;Please list other details&quot;,
+        &quot;helpText&quot; : &quot;&quot;,
+        &quot;help&quot; : &quot;false&quot;,
+        &quot;expression&quot; : null,
+        &quot;dateFormat&quot; : null,
+        &quot;dataType&quot; : null,
+        &quot;conditionType&quot; : &quot;Hide if False&quot;,
+        &quot;checkLabel&quot; : null
+      },
+      &quot;parentElementType&quot; : &quot;Step&quot;,
+      &quot;parentElementName&quot; : &quot;Step1&quot;,
+      &quot;omniProcessVersionNumber&quot; : &quot;1.0&quot;,
+      &quot;name&quot; : &quot;Other&quot;,
+      &quot;level&quot; : &quot;1.0&quot;,
+      &quot;elements&quot; : [ ],
+      &quot;discoveryFrameworkUsageType&quot; : null,
+      &quot;designerCustomizationType&quot; : &quot;Discovery Framework&quot;,
+      &quot;description&quot; : null,
+      &quot;customTypeDetails&quot; : {
+        &quot;discoveryFramework&quot; : {
+          &quot;questionText&quot; : &quot;Please list other details&quot;,
+          &quot;questionNamespace&quot; : null,
+          &quot;questionDeveloperName&quot; : &quot;Other&quot;,
+          &quot;questionDataType&quot; : &quot;TextArea&quot;,
+          &quot;questionCategory&quot; : &quot;Demographic&quot;
+        }
+      }
+    } ],
+    &quot;discoveryFrameworkUsageType&quot; : null,
+    &quot;designerCustomizationType&quot; : &quot;Discovery Framework&quot;,
+    &quot;description&quot; : null,
+    &quot;customTypeDetails&quot; : null
+  } ],
+  &quot;designerCustomizationType&quot; : &quot;Discovery Framework&quot;,
+  &quot;discoveryFrameworkUsageType&quot; : &quot;Default&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>AgentForceTransformOmniscriptResults</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AgentForceTransformOmniscriptResults8203593793896182</globalKey>
+        <inputFieldName>elements:elements:sequenceNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AgentForceTransformOmniscriptResults</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputelements:questionsequencenumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AgentForceTransformOmniscriptResults8990581292557964</globalKey>
+        <inputFieldName>elements:elements:name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AgentForceTransformOmniscriptResults</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputelements:name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AgentForceTransformOmniscriptResults56930301506415</globalKey>
+        <inputFieldName>elements:elements:propertySetConfig:options:value</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AgentForceTransformOmniscriptResults</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputelements:option:value</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AgentForceTransformOmniscriptResults011817156620586466</globalKey>
+        <inputFieldName>elements:elements:propertySetConfig:label</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AgentForceTransformOmniscriptResults</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputelements:label</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AgentForceTransformOmniscriptResultsCustom1293</globalKey>
+        <inputFieldName>elements:elements:customTypeDetails:discoveryFramework:questionDataType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AgentForceTransformOmniscriptResults</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputelements:datatype</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AgentForceTransformOmniscriptResults9223681284207437</globalKey>
+        <inputFieldName>elements:elements:propertySetConfig:show</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AgentForceTransformOmniscriptResults</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputelements:show</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AgentForceTransformOmniscriptResultsCustom8397</globalKey>
+        <inputFieldName>elements:sequenceNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AgentForceTransformOmniscriptResults</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputelements:stepsequencenumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>AgentForceTransformOmniscriptResultsCustom9867</globalKey>
+        <inputFieldName>elements:elements:stepName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>AgentForceTransformOmniscriptResults</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>outputelements:stepname</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;versionNumber&quot; : &quot;1&quot;,
+  &quot;type&quot; : &quot;ElderlyCare&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;subType&quot; : &quot;Assessment&quot;,
+  &quot;name&quot; : &quot;ElderlyCareComplaintAssessment&quot;,
+  &quot;OmniscriptId&quot; : &quot;0jNKX000000BdZE2A0&quot;,
+  &quot;elements&quot; : {
+    &quot;Name&quot; : &quot;Step1&quot;,
+    &quot;type&quot; : &quot;Step&quot;,
+    &quot;propertySetConfig&quot; : {
+      &quot;businessEvent&quot; : &quot;&quot;,
+      &quot;businessCategory&quot; : &quot;&quot;,
+      &quot;pubsub&quot; : false,
+      &quot;message&quot; : { },
+      &quot;ssm&quot; : false,
+      &quot;wpm&quot; : false,
+      &quot;errorMessage&quot; : {
+        &quot;default&quot; : null,
+        &quot;custom&quot; : [ ]
+      },
+      &quot;allowSaveForLater&quot; : true,
+      &quot;chartLabel&quot; : null,
+      &quot;instructionKey&quot; : &quot;&quot;,
+      &quot;HTMLTemplateId&quot; : &quot;&quot;,
+      &quot;conditionType&quot; : &quot;Hide if False&quot;,
+      &quot;show&quot; : null,
+      &quot;knowledgeOptions&quot; : {
+        &quot;typeFilter&quot; : &quot;&quot;,
+        &quot;remoteTimeout&quot; : 30000,
+        &quot;dataCategoryCriteria&quot; : &quot;&quot;,
+        &quot;keyword&quot; : &quot;&quot;,
+        &quot;publishStatus&quot; : &quot;Online&quot;,
+        &quot;language&quot; : &quot;English&quot;
+      },
+      &quot;remoteOptions&quot; : { },
+      &quot;remoteTimeout&quot; : 30000,
+      &quot;remoteMethod&quot; : &quot;&quot;,
+      &quot;remoteClass&quot; : &quot;&quot;,
+      &quot;showPersistentComponent&quot; : [ true, false ],
+      &quot;instruction&quot; : &quot;&quot;,
+      &quot;completeMessage&quot; : &quot;Are you sure you want to complete the script?&quot;,
+      &quot;completeLabel&quot; : &quot;Complete&quot;,
+      &quot;saveMessage&quot; : &quot;Are you sure you want to save it for later?&quot;,
+      &quot;saveLabel&quot; : &quot;Save for later&quot;,
+      &quot;cancelMessage&quot; : &quot;Are you sure?&quot;,
+      &quot;cancelLabel&quot; : &quot;Cancel&quot;,
+      &quot;nextWidth&quot; : 3,
+      &quot;nextLabel&quot; : &quot;Next&quot;,
+      &quot;previousWidth&quot; : 3,
+      &quot;previousLabel&quot; : &quot;Previous&quot;,
+      &quot;validationRequired&quot; : true,
+      &quot;label&quot; : &quot;Untitled Step&quot;
+    },
+    &quot;elements&quot; : [ {
+      &quot;Name&quot; : &quot;Accidents&quot;,
+      &quot;type&quot; : &quot;Text&quot;,
+      &quot;propertySetConfig&quot; : {
+        &quot;disOnTplt&quot; : false,
+        &quot;hide&quot; : false,
+        &quot;HTMLTemplateId&quot; : &quot;&quot;,
+        &quot;debounceValue&quot; : 0,
+        &quot;accessibleInFutureSteps&quot; : false,
+        &quot;conditionType&quot; : &quot;Hide if False&quot;,
+        &quot;show&quot; : null,
+        &quot;placeholder&quot; : &quot;&quot;,
+        &quot;maxLength&quot; : 255,
+        &quot;minLength&quot; : 0,
+        &quot;ptrnErrText&quot; : &quot;&quot;,
+        &quot;pattern&quot; : &quot;&quot;,
+        &quot;mask&quot; : &quot;&quot;,
+        &quot;helpText&quot; : &quot;&quot;,
+        &quot;help&quot; : false,
+        &quot;defaultValue&quot; : null,
+        &quot;readOnly&quot; : false,
+        &quot;repeatLimit&quot; : null,
+        &quot;repeatClone&quot; : false,
+        &quot;repeat&quot; : false,
+        &quot;required&quot; : false,
+        &quot;inputWidth&quot; : 12,
+        &quot;showInputWidth&quot; : false,
+        &quot;label&quot; : &quot;Are you aware of previous accidents? If yes, describe&quot;,
+        &quot;controlWidth&quot; : 12
+      },
+      &quot;level&quot; : 1,
+      &quot;sequenceNumber&quot; : &quot;1&quot;
+    }, {
+      &quot;Name&quot; : &quot;Driving&quot;,
+      &quot;type&quot; : &quot;Radio&quot;,
+      &quot;propertySetConfig&quot; : {
+        &quot;disOnTplt&quot; : false,
+        &quot;enableCaption&quot; : true,
+        &quot;imageCountInRow&quot; : 3,
+        &quot;optionHeight&quot; : 100,
+        &quot;optionWidth&quot; : 100,
+        &quot;hide&quot; : false,
+        &quot;HTMLTemplateId&quot; : &quot;&quot;,
+        &quot;accessibleInFutureSteps&quot; : false,
+        &quot;conditionType&quot; : &quot;Hide if False&quot;,
+        &quot;show&quot; : null,
+        &quot;controllingField&quot; : {
+          &quot;source&quot; : &quot;&quot;,
+          &quot;type&quot; : &quot;&quot;,
+          &quot;element&quot; : &quot;&quot;
+        },
+        &quot;optionSource&quot; : {
+          &quot;source&quot; : &quot;&quot;,
+          &quot;type&quot; : &quot;&quot;
+        },
+        &quot;options&quot; : [ {
+          &quot;setAll&quot; : false,
+          &quot;value&quot; : &quot;Yes&quot;,
+          &quot;developerName&quot; : &quot;Yes&quot;,
+          &quot;name&quot; : &quot;Yes&quot;
+        }, {
+          &quot;setAll&quot; : false,
+          &quot;value&quot; : &quot;No&quot;,
+          &quot;developerName&quot; : &quot;No&quot;,
+          &quot;name&quot; : &quot;No&quot;
+        } ],
+        &quot;helpText&quot; : &quot;&quot;,
+        &quot;help&quot; : false,
+        &quot;defaultValue&quot; : null,
+        &quot;horizontalMode&quot; : false,
+        &quot;readOnly&quot; : false,
+        &quot;repeatLimit&quot; : null,
+        &quot;repeatClone&quot; : false,
+        &quot;repeat&quot; : false,
+        &quot;required&quot; : false,
+        &quot;label&quot; : &quot;Have you noticed erratic driving or new damage to their vehicle?&quot;,
+        &quot;controlWidth&quot; : 12
+      },
+      &quot;level&quot; : 1,
+      &quot;sequenceNumber&quot; : &quot;0&quot;
+    }, {
+      &quot;Name&quot; : &quot;Trash&quot;,
+      &quot;type&quot; : &quot;Radio&quot;,
+      &quot;propertySetConfig&quot; : {
+        &quot;disOnTplt&quot; : false,
+        &quot;enableCaption&quot; : true,
+        &quot;imageCountInRow&quot; : 3,
+        &quot;optionHeight&quot; : 100,
+        &quot;optionWidth&quot; : 100,
+        &quot;hide&quot; : false,
+        &quot;HTMLTemplateId&quot; : &quot;&quot;,
+        &quot;accessibleInFutureSteps&quot; : false,
+        &quot;conditionType&quot; : &quot;Hide if False&quot;,
+        &quot;show&quot; : null,
+        &quot;controllingField&quot; : {
+          &quot;source&quot; : &quot;&quot;,
+          &quot;type&quot; : &quot;&quot;,
+          &quot;element&quot; : &quot;&quot;
+        },
+        &quot;optionSource&quot; : {
+          &quot;source&quot; : &quot;&quot;,
+          &quot;type&quot; : &quot;&quot;
+        },
+        &quot;options&quot; : [ {
+          &quot;setAll&quot; : false,
+          &quot;value&quot; : &quot;Yes&quot;,
+          &quot;developerName&quot; : &quot;Yes&quot;,
+          &quot;name&quot; : &quot;Yes&quot;
+        }, {
+          &quot;setAll&quot; : false,
+          &quot;value&quot; : &quot;No&quot;,
+          &quot;developerName&quot; : &quot;No&quot;,
+          &quot;name&quot; : &quot;No&quot;
+        } ],
+        &quot;helpText&quot; : &quot;&quot;,
+        &quot;help&quot; : false,
+        &quot;defaultValue&quot; : null,
+        &quot;horizontalMode&quot; : false,
+        &quot;readOnly&quot; : false,
+        &quot;repeatLimit&quot; : null,
+        &quot;repeatClone&quot; : false,
+        &quot;repeat&quot; : false,
+        &quot;required&quot; : false,
+        &quot;label&quot; : &quot;Are they failing to put trash out for weekly pickup?&quot;,
+        &quot;controlWidth&quot; : 12
+      },
+      &quot;level&quot; : 1,
+      &quot;sequenceNumber&quot; : &quot;2&quot;
+    }, {
+      &quot;Name&quot; : &quot;Other&quot;,
+      &quot;type&quot; : &quot;Text Area&quot;,
+      &quot;propertySetConfig&quot; : {
+        &quot;disOnTplt&quot; : false,
+        &quot;hide&quot; : false,
+        &quot;HTMLTemplateId&quot; : &quot;&quot;,
+        &quot;debounceValue&quot; : 0,
+        &quot;accessibleInFutureSteps&quot; : false,
+        &quot;conditionType&quot; : &quot;Hide if False&quot;,
+        &quot;show&quot; : {
+          &quot;group&quot; : {
+            &quot;rules&quot; : [ {
+              &quot;field&quot; : &quot;Trash&quot;,
+              &quot;condition&quot; : &quot;=&quot;,
+              &quot;data&quot; : &quot;Yes&quot;
+            } ],
+            &quot;operator&quot; : &quot;AND&quot;
+          }
+        },
+        &quot;placeholder&quot; : &quot;&quot;,
+        &quot;maxLength&quot; : 255,
+        &quot;minLength&quot; : 0,
+        &quot;ptrnErrText&quot; : &quot;&quot;,
+        &quot;pattern&quot; : &quot;&quot;,
+        &quot;helpText&quot; : &quot;&quot;,
+        &quot;help&quot; : false,
+        &quot;defaultValue&quot; : null,
+        &quot;readOnly&quot; : false,
+        &quot;repeatLimit&quot; : null,
+        &quot;repeatClone&quot; : false,
+        &quot;repeat&quot; : false,
+        &quot;required&quot; : false,
+        &quot;inputWidth&quot; : 12,
+        &quot;showInputWidth&quot; : false,
+        &quot;label&quot; : &quot;Please list other details&quot;,
+        &quot;controlWidth&quot; : 12
+      },
+      &quot;level&quot; : 1,
+      &quot;sequenceNumber&quot; : &quot;3&quot;
+    }, {
+      &quot;Name&quot; : &quot;Appearance&quot;,
+      &quot;type&quot; : &quot;Radio&quot;,
+      &quot;propertySetConfig&quot; : {
+        &quot;disOnTplt&quot; : false,
+        &quot;enableCaption&quot; : true,
+        &quot;imageCountInRow&quot; : 3,
+        &quot;optionHeight&quot; : 100,
+        &quot;optionWidth&quot; : 100,
+        &quot;hide&quot; : false,
+        &quot;HTMLTemplateId&quot; : &quot;&quot;,
+        &quot;accessibleInFutureSteps&quot; : false,
+        &quot;conditionType&quot; : &quot;Hide if False&quot;,
+        &quot;show&quot; : null,
+        &quot;controllingField&quot; : {
+          &quot;source&quot; : &quot;&quot;,
+          &quot;type&quot; : &quot;&quot;,
+          &quot;element&quot; : &quot;&quot;
+        },
+        &quot;optionSource&quot; : {
+          &quot;source&quot; : &quot;&quot;,
+          &quot;type&quot; : &quot;&quot;
+        },
+        &quot;options&quot; : [ {
+          &quot;setAll&quot; : false,
+          &quot;value&quot; : &quot;Yes&quot;,
+          &quot;developerName&quot; : &quot;Yes&quot;,
+          &quot;name&quot; : &quot;Yes&quot;
+        }, {
+          &quot;setAll&quot; : false,
+          &quot;value&quot; : &quot;No&quot;,
+          &quot;developerName&quot; : &quot;No&quot;,
+          &quot;name&quot; : &quot;No&quot;
+        } ],
+        &quot;helpText&quot; : &quot;&quot;,
+        &quot;help&quot; : false,
+        &quot;defaultValue&quot; : null,
+        &quot;horizontalMode&quot; : false,
+        &quot;readOnly&quot; : false,
+        &quot;repeatLimit&quot; : null,
+        &quot;repeatClone&quot; : false,
+        &quot;repeat&quot; : false,
+        &quot;required&quot; : false,
+        &quot;label&quot; : &quot;Is there a sudden unkempt appearance?&quot;,
+        &quot;controlWidth&quot; : 12
+      },
+      &quot;level&quot; : 1,
+      &quot;sequenceNumber&quot; : &quot;4&quot;
+    } ],
+    &quot;level&quot; : 0,
+    &quot;sequenceNumber&quot; : &quot;0&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>AgentForceTransformOmniscriptResults_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>
