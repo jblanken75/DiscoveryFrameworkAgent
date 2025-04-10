@@ -14,13 +14,19 @@ This is a framework that allows for Agentforce Agents to use Discovery Framework
 # Setup Instructions
 
 <b>Using the Metadata API</b><p>
-If using the Metadata API, import the Repository Items in the following order:
+If using the Metadata API, first ensure that Einstein and Agentforce have been enabled and turned on in the org.  
+Next use the Mestadata API to import the Repository Items in the following order:
 1. classes
 2. AssessmentQuestions
 3. omniDataTransforms
 4. omniIntegrationProcedures
 5. omniScripts
 6. permissionSets
-7. 
+7. permissionSetGroups
+8. omniScripts
+9. genAIFunctions
+10. genAIPlugins
+11. genAIPlanners
+Assign the DF Agent Permissions Permission Set Group to the Agent User
 
 
