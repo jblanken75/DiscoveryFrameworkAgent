@@ -46,5 +46,6 @@ Next use the Mestadata API to import the Repository Items in the following order
   * Add the OmniscriptHander and SaveDiscoveryFramework Actions to the Topic
 
 <b>Manual Setup</b><p>
-<i>Note:  If using a manual setup, you will have to create your own Discovery Framework Omniscript as Discovery Framework Omniscripts and Assessment Questions can only be safely imported using the Metadata API <i><p>
-1. Create the AgentForceOmniscriptHandler Apex Class from the source <a href="https://github.com/jblanken75/DiscoveryFrameworkAgent/blob/main/force-app/main/default/classes/AgentForceOmniscriptHandler.cls">code</a>
+<i>Note:  If using a manual setup, you will have to create your own Discovery Framework Omniscript as Discovery Framework Omniscripts and Assessment Questions can only be safely imported using the Metadata API </i><p>
+1. Create the AgentForceOmniscriptHandler Apex Class from the source <a href="https://github.com/jblanken75/DiscoveryFrameworkAgent/blob/main/force-app/main/default/classes/AgentForceOmniscriptHandler.cls" target="_blank>code</a>
+2. Create the AgentForceSaveDiscoveryFramework Apex class from the source <a href="https://github.com/jblanken75/DiscoveryFrameworkAgent/blob/main/force-app/main/default/classes/AgentForceSaveDiscoveryFramework.cls" target="_blank>code</a>
