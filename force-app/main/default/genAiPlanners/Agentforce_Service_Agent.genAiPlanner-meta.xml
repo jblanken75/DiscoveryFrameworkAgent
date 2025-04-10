@@ -7,9 +7,6 @@
     <genAiPlugins>
         <genAiPluginName>Childcare_Eligibility</genAiPluginName>
     </genAiPlugins>
-    <genAiPlugins>
-        <genAiPluginName>Scholarship_Interest</genAiPluginName>
-    </genAiPlugins>
     <masterLabel>Agentforce Service Agent</masterLabel>
     <plannerType>AiCopilot__ReAct</plannerType>
 </GenAiPlanner>
