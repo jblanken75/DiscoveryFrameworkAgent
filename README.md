@@ -29,8 +29,7 @@ Next use the Mestadata API to import the Repository Items in the following order
 5. omniScripts
 6. permissionSets
 7. permissionSetGroups
-8. omniScripts
-9. genAIFunctions
+8. genAIFunctions
 * Create a new Service Agent or use an Existing Service Agent
 * Assign the DF Agent Permission Permission Set to the Agent's user
 * Also ensure that the Agent's user has the Agentforce Service Agent Object Access Permission Set  
