@@ -18,6 +18,7 @@ This setup can be performed using either VS Code and the Metadata API or it can 
 * OmniDataTransform - Public Read Only
 * Assessment Question - Public Read Only
 * Omni Process Assessment Question Version - Public Read Only
+* Omni Process Assessment Question Version - Public Read Only
 
 <b>Using the Metadata API</b><p>
 If using the Metadata API, first ensure that Einstein and Agentforce have been enabled and turned on in the org.  
