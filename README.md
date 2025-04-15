@@ -5,6 +5,8 @@ This is a framework that allows for Agentforce Agents to use Discovery Framework
 * The Org must have Omnistudio and Discovery Framework enabled
 * An Active Discovery Framework Omniscript must be created.  The Omniscript must be a Discovery Framework Omniscript and cannot be a non Discovery Framework Omniscript
 * This will only work with single value elements such as Text, Number, Date.  Grouped elements such as Blocks and Edit Blocks will not work
+* This assumes that Employee Expierence is licensed and enabled in the Org.  If it is not enabled then you will will need to find another Permission Set License that offers access to the Assessment objects.
+* For the best results, create an Omniscript that only has 1 Step.  It should work with multiple steps, but sporadic issues have been seen when using multiple steps.
 
 # What's included in the Repository
 * All source code related to the framework - Apex Classes, Integration Procedures, Data Mappers, Permission Set, 
@@ -64,9 +66,9 @@ Next use the Mestadata API to import the Repository Items in the following order
     * Keep defaults for Instructions
     * After creating, edit the Action and uncheck the Show in Conversation for the Response Output
 * Create a Permission Set that performs the following:
-   * Grants Edit Access to the Assessment Object and Edit Access to the Identifier field on the Assessment Object
+   * Grants Read, Create and Edit Access to the Assessment Object and Edit Access to all of the fields on the Assessment Object
    * Grants Apex Access to the AgentForceOmniscriptHandler and AgentForceSaveDiscoveryFramework Apex classes
-* Create a Permission Set Group that includes the Permission Set created above and the Omnistudio User and Product Catalog Management Viewer Permission Sets
+* Create a Permission Set Group that includes the Permission Set created above and the Omnistudio User and Assessment for Employee Community Permission Sets
 * Create a new Service Agent or use an Existing Service Agent
 * Assign the Permission Set Group created above to the Agent's user
 * Also ensure that the Agent's user has the Agentforce Service Agent Object Access Permission Set  
