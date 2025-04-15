@@ -68,7 +68,7 @@ Next use the Mestadata API to import the Repository Items in the following order
 * Create a Permission Set that performs the following:
    * Grants Read, Create and Edit Access to the Assessment Object and Edit Access to all of the fields on the Assessment Object
    * Grants Apex Access to the AgentForceOmniscriptHandler and AgentForceSaveDiscoveryFramework Apex classes
-* Create a Permission Set Group that includes the Permission Set created above and the Omnistudio User and Assessment for Employee Community Permission Sets
+* Create a Permission Set Group that includes the Permission Set created above, Industry Assessment, Omnistudio User and Assessment for Employee Community Permission Sets (See note above if this permission set does not exist in your Org)
 * Create a new Service Agent or use an Existing Service Agent
 * Assign the Permission Set Group created above to the Agent's user
 * Also ensure that the Agent's user has the Agentforce Service Agent Object Access Permission Set  
